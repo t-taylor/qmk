@@ -31,6 +31,7 @@
 
 #define RAI_DEL LT(_RAISE, KC_DEL)
 #define RAI_TAB LT(_RAISE, KC_TAB)
+#define LOW_ENT LT(_LOWER, KC_ENT)
 
 #define FUNC_L OSL(_FUNCTION)
 
@@ -50,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------|                             |--------+--------+--------+--------+--------|
       KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                                   KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,
   //|--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                 RAI_DEL, KC_BSPC, KC_ESC,     KC_ENT,  KC_SPC,  RAI_TAB
+                                 RAI_DEL, KC_BSPC, KC_ESC,     LOW_ENT, KC_SPC,  RAI_TAB
                              //`--------------------------'  `--------------------------'
 
       ),

@@ -16,6 +16,32 @@
  */
 
 #pragma once
+#include "config_common.h"
+#define VENDOR_ID 0xA8F8
+#define PRODUCT_ID 0x1830
+#define DEVICE_VER 0x0001
+#define MANUFACTURER Bastard Keyboards
+#define PRODUCT Skeletyl
+
+#define MATRIX_ROWS 8
+#define MATRIX_COLS 5
+#define RGBLIGHT_LIMIT_VAL 180
+#define MATRIX_ROW_PINS { B5, F7, F6, B6 }
+#define MATRIX_COL_PINS { E6, C6, B1, B3, B2 }
+
+#define DIODE_DIRECTION ROW2COL
+
+#define RGB_DI_PIN D2
+#define RGBLED_NUM 36
+#define RGBLED_SPLIT { 18, 18 }
+#define RGBLIGHT_ANIMATIONS
+
+#define DEBOUNCE 5
+
+#define SOFT_SERIAL_PIN D0
+
+#define MASTER_LEFT
+
 #ifdef RGB_MATRIX_ENABLE
 //#    define SPLIT_TRANSPORT_MIRROR
 #   define RGB_MATRIX_KEYPRESSES // reacts to keypresses
