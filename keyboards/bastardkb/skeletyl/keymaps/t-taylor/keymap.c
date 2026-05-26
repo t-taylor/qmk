@@ -29,9 +29,10 @@
 #define HOME_L LALT_T(KC_L)
 #define HOME_SCLN RGUI_T(KC_SCLN)
 
-#define RAI_DEL LT(_RAISE, KC_DEL)
-#define RAI_TAB LT(_RAISE, KC_TAB)
-#define LOW_ENT LT(_LOWER, KC_ENT)
+#define RAI_BSP LT(_RAISE, KC_BSPC)
+#define LOW_ESC LT(_LOWER, KC_ESC)
+#define RAI_ENT LT(_RAISE, KC_ENT)
+#define LOW_SPC LT(_LOWER, KC_SPC)
 
 #define FUNC_L OSL(_FUNCTION)
 
@@ -55,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------|                             |--------+--------+--------+--------+--------|
       KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                                   KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,
   //|--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                 RAI_DEL, KC_BSPC, KC_ESC,     LOW_ENT, KC_SPC,  RAI_TAB
+                                 KC_DEL, RAI_BSP, LOW_ESC,    LOW_SPC, RAI_ENT, KC_TAB
                              //`--------------------------'  `--------------------------'
 
       ),
@@ -78,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------|                             |--------+--------+--------+--------+--------|
       _______, _______, _______, _______, _______,                               KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_BTN1,
   //|--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                 _______, _______, FUNC_L,     _______, _______, _______
+                                  FUNC_L,  FUNC_L, FUNC_L,     _______, _______, _______
                              //`--------------------------'  `--------------------------'
      ),
  [_GAME] = LAYOUT_split_3x5_3(
@@ -89,7 +90,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------|                             |--------+--------+--------+--------+--------|
        KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                                   KC_N,    KC_M,   KC_COMM,  KC_DOT, KC_SLSH,
   //|--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                 KC_DEL, KC_BSPC, KC_ESC,     LOW_ENT, KC_SPC,  GAM_ON
+                                 KC_DEL, KC_BSPC, KC_ESC,     LOW_SPC, KC_ENT,  GAM_OF
                              //`--------------------------'  `--------------------------'
 
       ),
