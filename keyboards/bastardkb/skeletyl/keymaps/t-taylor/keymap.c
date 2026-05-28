@@ -24,10 +24,10 @@
 #define HOME_F LCTL_T(KC_F)
 
 // Right-hand home row mods
-#define HOME_J RCTL_T(KC_J)
-#define HOME_K RSFT_T(KC_K)
+#define HOME_J LCTL_T(KC_J)
+#define HOME_K LSFT_T(KC_K)
 #define HOME_L LALT_T(KC_L)
-#define HOME_SCLN RGUI_T(KC_SCLN)
+#define HOME_SCLN LGUI_T(KC_SCLN)
 
 #define RAI_BSP LT(_RAISE, KC_BSPC)
 #define LOW_ESC LT(_LOWER, KC_ESC)
@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------|                             |--------+--------+--------+--------+--------|
       KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                                   KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,
   //|--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                 KC_DEL, RAI_BSP, LOW_ESC,    LOW_SPC, RAI_ENT, KC_TAB
+                                RAI_BSP, LOW_ESC, KC_DEL,      KC_TAB, LOW_SPC, RAI_ENT
                              //`--------------------------'  `--------------------------'
 
       ),
