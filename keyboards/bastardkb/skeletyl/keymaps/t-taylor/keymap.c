@@ -31,8 +31,8 @@
 
 #define RAI_BSP LT(_RAISE, KC_BSPC)
 #define LOW_ESC LT(_LOWER, KC_ESC)
-#define RAI_ENT LT(_RAISE, KC_ENT)
-#define LOW_SPC LT(_LOWER, KC_SPC)
+#define RAI_SPC LT(_RAISE, KC_SPC)
+#define LOW_ENT LT(_LOWER, KC_ENT)
 
 #define FUNC_L OSL(_FUNCTION)
 
@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------|                             |--------+--------+--------+--------+--------|
       KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                                   KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,
   //|--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                RAI_BSP, LOW_ESC, KC_DEL,      KC_TAB, LOW_SPC, RAI_ENT
+                                LOW_ESC, RAI_BSP, KC_DEL,      KC_TAB, RAI_SPC, LOW_ENT
                              //`--------------------------'  `--------------------------'
 
       ),
@@ -90,7 +90,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------|                             |--------+--------+--------+--------+--------|
        KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                                   KC_N,    KC_M,   KC_COMM,  KC_DOT, KC_SLSH,
   //|--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                 KC_DEL, KC_BSPC, KC_ESC,     LOW_SPC, KC_ENT,  GAM_OF
+                                 KC_ESC, KC_BSPC, KC_DEL,      KC_TAB, RAI_SPC, GAM_OF
                              //`--------------------------'  `--------------------------'
 
       ),
